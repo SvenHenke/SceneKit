@@ -13,8 +13,16 @@ import SceneKit
 
 class GameViewController: UIViewController {
     
+    
+    var scnView: SCNView!
+    
+    var scnScene: SCNScene!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupView()
+        setupScene()
     }
     
     override func shouldAutorotate() -> Bool {
@@ -24,4 +32,18 @@ class GameViewController: UIViewController {
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
+    
+    func setupView() {
+    scnView = self.view as! SCNView
+    }
+
+    func setupScene() {
+        scnScene = SCNScene()
+        scnView.scene = scnScene
+        
+        scnScene.background.contents = "GeometryFighter.scnassets/Textures/Background_Diffuse.png"
+    }
+    
+    
 }
+

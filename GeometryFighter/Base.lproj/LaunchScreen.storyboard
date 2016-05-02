@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +17,22 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" image="AppIcon_83_5.png" translatesAutoresizingMaskIntoConstraints="NO" id="fuP-0k-oIZ">
+                                <rect key="frame" x="242" y="252" width="83" height="72"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15358220448178328" green="0.060177090928832055" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fuP-0k-oIZ" secondAttribute="trailing" constant="4" id="7qB-xs-WAo"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="fuP-0k-oIZ" secondAttribute="bottom" constant="4" id="A7c-tD-8Rz"/>
+                            <constraint firstItem="fuP-0k-oIZ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="221" id="E5t-Xa-ugE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fuP-0k-oIZ" secondAttribute="trailing" constant="4" id="Ro0-uH-Z0c"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="fuP-0k-oIZ" secondAttribute="bottom" constant="4" id="jSI-j1-hKY"/>
+                            <constraint firstItem="fuP-0k-oIZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="4" id="kki-4Z-NUd"/>
+                            <constraint firstItem="fuP-0k-oIZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="4" id="mu8-H5-Mox"/>
+                            <constraint firstItem="fuP-0k-oIZ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="4" id="vQ8-Wb-j1f"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +40,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AppIcon_83_5.png" width="83" height="83"/>
+    </resources>
 </document>
